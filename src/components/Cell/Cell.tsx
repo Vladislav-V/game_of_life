@@ -6,6 +6,7 @@ export interface CellField {
     row: number,
 }
 
+export const sum = (a:number, b:number):number => a + b
 export const Cell = (props:CellField) => {
     const [visible, setVisible] = useState(props.visible)
     const handlerCellClick = () => {
